@@ -9,6 +9,7 @@ urlpatterns = [
     path('login', views.login, name='login'),
     path('brokenpage', views.brokenpage, name='brokenpage'),
     path('nothing', views.nothing, name='nothing'),
+    path('useless_page', views.useless_page, name='useless_page'),   
 ]
 
 

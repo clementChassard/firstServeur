@@ -14,9 +14,15 @@ import os
 import raven
 
 
-from raven import Client
+##from raven import Client
 
-client = Client('https://65d73e1ac5c944f08bff609f6aa3f724:31e75afc32954f7f97183e103261b166@sentry.io/1183623')
+##client = Client('https://65d73e1ac5c944f08bff609f6aa3f724:31e75afc32954f7f97183e103261b166@sentry.io/1183623')
+
+
+##from raven.contrib.django.raven_compat.models import client
+
+##client.captureException()
+
 
 
 
@@ -57,11 +63,12 @@ INSTALLED_APPS = [
 
 
 RAVEN_CONFIG = {
-    'dsn': 'https://65d73e1ac5c944f08bff609f6aa3f724:31e75afc32954f7f97183e103261b166@sentry.io/1183623',
+    'dsn':'https://30551cdffa0b4dad9ee95c1d63d94352:5ab0ad2d264946109275d6440b8ac402@sentry1.kapt.mobi/2',
+   # 'release': '0e4fdef81448dcfa0e16ecc4433ff3997aa53572'
+ 
     'release': raven.fetch_git_sha(os.path.abspath(os.pardir)),
 
 }
-
 
 
 

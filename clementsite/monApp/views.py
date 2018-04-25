@@ -24,4 +24,6 @@ def brokenpage(request):
 def nothing(request):
     return render(request, 'monApp/nothing.html')
 
+def useless_page(request):
+	return render(request, 'useless_page.html')
 
